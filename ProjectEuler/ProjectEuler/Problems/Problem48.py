@@ -1,4 +1,4 @@
-
+﻿
 
 #The series, 11 + 22 + 33 + ... + 1010 = 10405071317.
 
@@ -24,7 +24,8 @@ def LastDigits(value, numDigits):
 	return digits
 
 #lastTenDigits = LastDigits(sum, 10)
- 
-sumStr = str(sum)
-print("Sum: " + sumStr)
-print("Last Ten Digits: " + sumStr[-10:])
+def Solve():
+    sumStr = str(sum)
+    print("Sum: " + sumStr)
+    print("Last Ten Digits: " + sumStr[-10:])
+    return sumStr

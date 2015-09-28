@@ -1,4 +1,4 @@
-
+﻿
 
 #A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 
@@ -36,5 +36,7 @@ def LargestPalindrome():
 					maxJ = j
 	return maxI, maxJ, maxVal
 	
-i, j, largestPalindrome = LargestPalindrome()
-print("Largest Palindrome that is a Product of 3-digit numbers: \n" + str(i) + " * " + str(j) + " = " + str(largestPalindrome))
+def Solve():
+    i, j, largestPalindrome = LargestPalindrome()
+    print("Largest Palindrome that is a Product of 3-digit numbers: \n" + str(i) + " * " + str(j) + " = " + str(largestPalindrome))
+    return largestPalindrome

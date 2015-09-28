@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 
 
 
@@ -15,12 +15,13 @@ def SumOfMultiples(vals, maxVal):
         for val in vals:
             if (i % val == 0):
                 sumVal += i
-                break;
-    return sumVal;
+                break
+    return sumVal
 
-maxVal = 1000
-vals = [3, 5]
+def Solve():
+    maxVal = 1000
+    vals = [3, 5]
 
-sumOf3sAnd5s = SumOfMultiples(vals, maxVal)
-
-print("Sum Of the multiples of 3's and 5's less than 1000: \n" + str(sumOf3sAnd5s))
+    sumOf3sAnd5s = SumOfMultiples(vals, maxVal)
+    print("Sum Of the multiples of 3's and 5's less than 1000: \n" + str(sumOf3sAnd5s))
+    return sumOf3sAnd5s

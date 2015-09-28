@@ -1,3 +1,4 @@
+﻿
 
 #2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
@@ -13,16 +14,17 @@ def IsCommonProduct(nums, val):
 
 
 def SmallestCommonProduct(nums):
-	
+	nums.sort(reverse = True)
 	minVal = min(nums)
 	maxVal = max(nums)
 	product = maxVal
-	print(str(minVal))
 	while(IsCommonProduct(nums, product) == False):		
 		product += maxVal
 	return product
 	
 	
-smallestCommonProduct = SmallestCommonProduct(range(1, 21))
-
-print("Smallest Common Product: \n" + str(smallestCommonProduct))
+def Solve():
+    nums = list(range(1, 21))
+    smallestCommonProduct = SmallestCommonProduct(nums)
+    print("Smallest Common Product: \n" + str(smallestCommonProduct))
+    return smallestCommonProduct
